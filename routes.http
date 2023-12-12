@@ -1,0 +1,35 @@
+POST http://localhost:3333/camiseta
+Content-Type: application/json
+
+{
+
+    "titulo": "Jaqueta jeans",
+    "tamanho": "P",
+    "tipo": "Jaqueta",
+    "cor": "Preta"
+}
+
+###
+
+GET http://localhost:3333/camiseta
+
+###
+
+GET http://localhost:3333/camiseta?search=Camiseta 
+
+
+###
+PUT http://localhost:3333/camisetas/2c2ea581-abde-4183-8c88-6db7b1bf7746
+Content-Type: application/json
+
+{
+    "titulo": "Camiseta feminina",
+    "tamanho": "M",
+    "tipo": "Camiseta",
+    "cor": "Rosa"
+}
+
+###
+
+DELETE http://localhost:3333/camisetas/86a756ad-44c8-4dfd-ba53-1d3e7492d864
+
